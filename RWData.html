@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta charset="utf-8">
+	<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="jspsych-5.0.3/jspsych.js"></script> <!--jspsych used for randomization and other potential uses-->
+	<script src="firebase.js"> </script>
+	<script src="client.min.js"> </script>
+	<link rel="stylesheet"
+			  href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+</head>
+
+<body>
+	<main>
+		<div>
+			<h1 id="heading">Data</h1>
+			<button onclick="CharData()">Character Moral Dilemmas </button>
+			<button onclick="RWData()">Personal Moral Dilemmas </button>
+			<br><br>
+			<button onclick="LoadAge()">Age</button>
+			<button onclick="LoadGenders()">Gender</button>
+			<button onclick="LoadGames()">Games</button>
+			<button id="charbutton" onclick="LoadChar()">Characters</button>
+			
+			<div id="container">
+				<p id="datashow" style="text-align: center">Select buttons to load data!</p>
+			</div>
+			
+		</div>
+	</main>
+</body>
+	<script src="RWData.js"></script>
+	<link rel="stylesheet" type="text/css" href="datacss.css">
+</html>

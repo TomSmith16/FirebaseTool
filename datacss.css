@@ -1,0 +1,79 @@
+body{
+	position:relative;
+	font-family: "Open Sans";
+	transition: 1s  ;
+	background-size:cover ;
+	background-attachment: fixed ;
+	background-repeat: no-repeat ;
+}
+
+body::after{
+  content: "";
+  background-size:cover;
+  background-color: grey;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;   
+}
+
+main{
+
+	background-color:white;
+	border-radius:2em;
+	margin:0px auto;
+	margin-top:2%;
+	width:70%;
+	padding:1.5em;
+	overflow:auto;
+
+}
+	
+h1{
+	text-align:center;
+	font-size: 50px;
+}
+
+div
+{
+	float:center;
+	clear:both;
+	margin:auto;
+	text-align:center;
+}
+
+button
+{
+	font-family: "Open Sans";
+	padding:10px;
+	margin: 1%;
+}
+
+#container
+{
+	text-align: justify;
+	float:center;
+	border: 2px solid black;
+	min-width: 600px;
+}
+#container div {
+  float:center;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+}
+#container:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+  background-color:red;
+}
+
+#charbutton
+{	transition: all 0.5s ease 0s  ;
+	text-align:center;
+	opacity: 1;
+}
